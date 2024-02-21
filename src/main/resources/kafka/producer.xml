@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<producer>
+    <keySerializer>org.apache.kafka.common.serialization.StringSerializer
+    </keySerializer> <!--сериализатор классов, тут находится название класса-->
+    <valueSerializer>
+        org.springframework.kafka.support.serializer.JsonSerializer
+    </valueSerializer> <!--Используется обычный джсон сериализатор, которые есть у пакета кафки у спринга-->
+</producer>
